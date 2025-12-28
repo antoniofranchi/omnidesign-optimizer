@@ -1,0 +1,11 @@
+# MATLAB temporary files
+*.asv
+*.autosave
+*.m~
+slprj/
+sfprj/
+
+
+# OS generated files
+.DS_Store
+Thumbs.db
