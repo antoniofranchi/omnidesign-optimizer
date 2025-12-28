@@ -1,4 +1,17 @@
 function OmniDesign_Analysis_N5Law_Nfrac_approx()
+% -------------------------------------------------------------------------
+%  Author:     Prof. Antonio Franchi
+%  Affiliation: 
+%      1. University of Twente, The Netherlands
+%      2. Sapienza University of Rome, Italy
+%  Date:       2025
+%  
+%  Description: 
+%      [One line description of what this file does]
+%
+%  Copyright (c) 2025 Antonio Franchi. All rights reserved.
+% -------------------------------------------------------------------------
+
 % =========================================================================
 % OMNIDESIGN OPTIMIZER - MODULE 3: TOPOLOGICAL ANALYSIS (THE N-5 LAW)
 % =========================================================================

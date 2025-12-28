@@ -1,7 +1,8 @@
 # OmniDesign Optimizer (MATLAB)
-**Version:** 4.1  
+**Version:** 1.0  
 **Status:** Public Release  
 **License:** MIT / Academic Free License  
+**Principal Investigator:** Prof. Antonio Franchi (University of Twente & Sapienza University of Rome)
 
 ---
 
@@ -58,6 +59,16 @@ The codebase is organized into three primary modules:
 
 ---
 
+## Authors & Affiliations
+**Prof. Antonio Franchi**
+* [Robotics and Mechatronics (RaM)](https://www.ram.eemcs.utwente.nl/), University of Twente, The Netherlands
+* [Department of Computer, Control and Management Engineering (DIAG)](https://diag.uniroma1.it/), Sapienza University of Rome, Italy
+
+---
+
 ## Citation
 If you use this software, please cite the accompanying publication:
-> [Authors], "Global Manifold Exhaustion for Omnidirectional Multirotor Design," [Journal/Conference], 2025.
+
+> **Antonio Franchi**, "The N−5 Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-actuated Multirotors," [Arxiv], 2025.
+
+---
