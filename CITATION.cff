@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Franchi"
+    given-names: "Antonio"
+    orcid: "https://orcid.org/0000-0002-5670-1282"
+title: "OmniDesign Optimizer"
+version: 1.0
+date-released: 2025-12-28
+url: "https://github.com/antoniofranchi/omnidesign-optimizer"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Franchi"
+    given-names: "Antonio"
+  journal: "TBD"
+  title: "TBD"
+  year: 2026
