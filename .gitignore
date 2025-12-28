@@ -4,6 +4,7 @@
 *.m~
 slprj/
 sfprj/
+.MATLABDriveTag
 
 
 # OS generated files
