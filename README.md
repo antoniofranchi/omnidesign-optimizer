@@ -61,14 +61,27 @@ The codebase is organized into three primary modules:
 
 ## Authors & Affiliations
 **Prof. Antonio Franchi**
-* [Robotics and Mechatronics (RaM)](https://www.ram.eemcs.utwente.nl/), University of Twente, The Netherlands
-* [Department of Computer, Control and Management Engineering (DIAG)](https://diag.uniroma1.it/), Sapienza University of Rome, Italy
+* [Robotics and Mechatronics (RaM)](https://www.ram.eemcs.utwente.nl/), University of Twente, Enschede, The Netherlands
+* [Department of Computer, Control and Management Engineering (DIAG)](https://diag.uniroma1.it/), Sapienza University of Rome, Rome, Italy
 
 ---
 
 ## Citation
-If you use this software, please cite the accompanying publication:
+If you use this software in your research, please cite the accompanying publication:
 
-> **Antonio Franchi**, "The N−5 Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-actuated Multirotors," [Arxiv], 2025.
+> **Antonio Franchi**, "The N-5 Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-actuated Multirotors," *arXiv preprint arXiv:2512.23619*, 2025.  
+> DOI: [10.48550/arXiv.2512.23619](https://doi.org/10.48550/arXiv.2512.23619)
 
+**BibTeX:**
+```bibtex
+@misc{franchi2025n5,
+  title        = {The {N-5} Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-actuated Multirotors},
+  author       = {Antonio Franchi},
+  year         = {2025},
+  eprint       = {2512.23619},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.RO},
+  doi          = {10.48550/arXiv.2512.23619},
+  url          = {[https://arxiv.org/abs/2512.23619](https://arxiv.org/abs/2512.23619)}
+}
 ---
