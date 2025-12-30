@@ -29,8 +29,10 @@ These animations validate the **N-5 Scaling Law** by simulating the vehicle trav
 #### 1. The Cube (N=8)
 [PASTE YOUR CUBE VIDEO LINK HERE]
 
+
 #### 2. The Octagon (N=8)
-[PASTE YOUR OCTAGON VIDEO LINK HERE]
+https://github.com/user-attachments/assets/bcadcfc7-6d8c-46cb-a12c-93f7b6b8b0b1
+
 
 ---
 
