@@ -27,8 +27,7 @@ These animations validate the **N-5 Scaling Law** by simulating the vehicle trav
 * **Random/Broken Cases:** The ellipsoids deform ("breathe") and shear, indicating a time-varying loss of control authority.
 
 #### 1. The Cube (N=8)
-[PASTE YOUR CUBE VIDEO LINK HERE]
-
+https://github.com/user-attachments/assets/e7454744-661d-4990-973c-dd4341547ab8
 
 #### 2. The Octagon (N=8)
 https://github.com/user-attachments/assets/bcadcfc7-6d8c-46cb-a12c-93f7b6b8b0b1
