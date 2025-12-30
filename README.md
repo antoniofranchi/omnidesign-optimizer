@@ -13,6 +13,27 @@ The core algorithm uses a **Global Manifold Exhaustion** strategy on the project
 
 ---
 
+## Video Demonstrations
+
+### Dynamic Manifold Visualization
+These animations validate the **N-5 Scaling Law** by simulating the vehicle traversing its solution manifold. They visualize the "Design Nullspace"—a continuous path where the vehicle can reconfigure itself without losing optimality.
+
+**How to read the dashboard:**
+* **Top Panel (Physical):** Displays 3 distinct optimal branches ("isomers") morphing in sync alongside random control groups. Notice that while the rotors rotate continuously, their relative phase offsets remain rigorously locked (**Affine Phase Locking**).
+* **Bottom Panel (Metrics):** Shows real-time Singular Values ($\sigma_1 \dots \sigma_6$) and Force/Torque Manipulability Ellipsoids.
+
+**Key Observation:**
+* **Optimal Branches:** The ellipsoids remain perfectly spherical and static, and singular values stay constant. This proves **Isotropic Invariance**: the vehicle can morph continuously while maintaining maximum control authority.
+* **Random/Broken Cases:** The ellipsoids deform ("breathe") and shear, indicating a time-varying loss of control authority.
+
+#### 1. The Cube (N=8)
+[PASTE YOUR CUBE VIDEO LINK HERE]
+
+#### 2. The Octagon (N=8)
+[PASTE YOUR OCTAGON VIDEO LINK HERE]
+
+---
+
 ## Repository Contents
 
 The codebase is organized into three primary modules:
