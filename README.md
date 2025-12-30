@@ -81,7 +81,7 @@ The codebase is organized into three primary modules:
 ---
 
 ## Authors & Affiliations
-**Prof. Antonio Franchi**
+**  Antonio Franchi**
 * [Robotics and Mechatronics (RaM)](https://www.ram.eemcs.utwente.nl/), University of Twente, Enschede, The Netherlands
 * [Department of Computer, Control and Management Engineering (DIAG)](https://diag.uniroma1.it/), Sapienza University of Rome, Rome, Italy
 
