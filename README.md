@@ -1,5 +1,5 @@
 # OmniDesign Optimizer (MATLAB)
-**Version:** 1.0  
+**Version:** 2.0  
 **Status:** Public Release  
 **License:** MIT / Academic Free License  
 **Principal Investigator:** Prof. Antonio Franchi (University of Twente & Sapienza University of Rome)
@@ -9,7 +9,7 @@
 ## Overview
 The **OmniDesign Optimizer** is a numerical framework for designing the geometry of fully-actuated and omnidirectional multirotor aerial vehicles. It solves for the optimal orientation of rotors (thrust vectors) to maximize **Kinematic Isotropy**.
 
-The core algorithm uses a **Global Manifold Exhaustion** strategy on the projective space $(\mathbb{RP}^2)^N$. The suite includes advanced topological analysis tools to verify the **Tangent Torus Reduction** and the **N-5 Scaling Law** proposed in the accompanying manuscript.
+The core algorithm uses a **Global Manifold Exhaustion** strategy on the projective space $(\mathbb{RP}^2)^N$. The suite includes advanced topological analysis tools and dynamic simulation environments to verify the **Tangent Torus Reduction**, the **N-5 Scaling Law**, and the practical utility of the optimal design null space proposed in the accompanying manuscript.
 
 ---
 
@@ -32,6 +32,8 @@ https://github.com/user-attachments/assets/e7454744-661d-4990-973c-dd4341547ab8
 #### 2. The Octagon (N=8)
 https://github.com/user-attachments/assets/bcadcfc7-6d8c-46cb-a12c-93f7b6b8b0b1
 
+#### 3. Hexarotor Dynamic Morphing & Wake Sweeping (N=6)
+*[Insert new video link here if you record the hexarotor_morphing_animation.m GUI in action]*
 
 ---
 
@@ -56,6 +58,9 @@ The codebase is organized into three primary modules:
     * **Purpose:** Analyzes the coordination between the intrinsic angles $\theta$ to verify the $K=N-5$ Scaling Law.
     * **Process:** Uses high-dimensional local PCA and clustering to identify discrete isomers (Topological Branches).
     * **Output:** Visualizes disconnected loops and computes the "Cluster Spread" confidence metric.
+* **`n5_hessian_expansion_study.m`** (Landscape Geometry & Expansion)
+    * **Purpose:** Evaluates the Subspace Alignment and local numerical Hessian along the 1D branches.
+    * **Output:** Proves continuous self-motion and maps the topological expansion of the flat multi-dimensional valleys in High-$N$ configurations ($N > 10$).
 
 ### 3. Visualization (`src/viz/`)
 * **`cube_singular_values_animation.m`**
@@ -64,6 +69,11 @@ The codebase is organized into three primary modules:
 * **`octagon_singular_values_animation.m`**
     * **Demo:** An interactive visualizer for the Planar Octagon (N=8) chassis.
     * **Features:** Demonstrates specific star-polygon winding numbers ($\{8,3\}, \{8,4\}, \{8,5\}$) and their impact on kinematic isotropy.
+* **`hexarotor_morphing_animation.m`** (Dynamic Reconfiguration Sim)
+    * **Demo:** Simulates a fully-actuated hexarotor executing a lateral navigation task while dynamically reconfiguring its thrust vectors along the 1D optimal manifold. Features real-time aerodynamic footprint visualization and particle advection.
+    * **Output:** Saves `morphing_sim_log.mat` when the simulation is stopped.
+* **`plot_morphing_sim_logs.m`** (Telemetry Plotter)
+    * **Purpose:** Processes simulation logs to generate publication-ready plots. Empirically proves control effort invariance ($||f|| = \text{const}$) during zero-energy self-motion.
 
 ---
 
@@ -73,11 +83,14 @@ The codebase is organized into three primary modules:
 
 2.  **Verify Performance:** Run `src/core/omnidesign_benchmarker.m` to reproduce the speed comparison and solution quality validation tables.
 
-3.  **Parametrize:** Run `src/analysis/torus_params_analyzer.m` on the generated optimizer data to map the solution manifold.
+3.  **Parametrize Manifold:** Run `src/analysis/torus_params_analyzer.m` on the generated optimizer data to map the solution manifold.
 
-4.  **Analyze Topology:** Run `src/analysis/n5_scaling_law_analyzer.m` to confirm the branch count ($K=N-5$) and visualize the solution isomers.
+4.  **Analyze Topology & Expansion:** * Run `src/analysis/n5_scaling_law_analyzer.m` to confirm the branch count ($K=N-5$) and visualize the solution isomers.
+    * Run `src/analysis/n5_hessian_expansion_study.m` to generate the landscape flattening matrices and continuous Hessian plots.
 
-5.  **Visualize:** Run the specific chassis animations in `src/viz/` to inspect the physical meaning of the singular values.
+5.  **Visualize & Simulate:** * Run the specific chassis animations (Cube/Octagon) in `src/viz/` to inspect the physical meaning of the singular values.
+    * Run `src/viz/hexarotor_morphing_animation.m`. Let the hexarotor sweep its wake, then click **Stop & Save** to export the telemetry.
+    * Run `src/viz/plot_morphing_sim_logs.m` to read the telemetry and automatically generate the `Dynamic_Reconfiguration_Telemetry.pdf` figure used in the manuscript.
 
 ---
 
@@ -106,4 +119,3 @@ If you use this software in your research, please cite the accompanying publicat
   doi          = {10.48550/arXiv.2512.23619},
   url          = {[https://arxiv.org/abs/2512.23619](https://arxiv.org/abs/2512.23619)}
 }
----
