@@ -9,7 +9,7 @@
 ## Overview
 The **OmniDesign Optimizer** is a numerical framework for designing the geometry of fully-actuated and omnidirectional multirotor aerial vehicles. It solves for the optimal orientation of rotors (thrust vectors) to maximize **Kinematic Isotropy**.
 
-The core algorithm uses a **Global Manifold Exhaustion** strategy on the projective space $(\mathbb{RP}^2)^N$. The suite includes advanced topological analysis tools and dynamic simulation environments to verify the **Tangent Torus Reduction**, the **N-5 Scaling Law**, and the practical utility of the optimal design null space proposed in the accompanying manuscript.
+The core algorithm uses a **Global Manifold Exhaustion** strategy on the projective space $(\mathbb{RP}^2)^N$. The suite includes advanced topological analysis tools and dynamic simulation environments to verify the **Tangent Torus Reduction**, the **N-5 Scaling Law**, and the practical utility of the optimal design null space proposed in the accompanying paper.
 
 ---
 
@@ -73,7 +73,7 @@ The codebase is organized into three primary modules:
     * **Demo:** Simulates a fully-actuated hexarotor executing a lateral navigation task while dynamically reconfiguring its thrust vectors along the 1D optimal manifold. Features real-time aerodynamic footprint visualization and particle advection.
     * **Output:** Saves `morphing_sim_log.mat` when the simulation is stopped.
 * **`plot_morphing_sim_logs.m`** (Telemetry Plotter)
-    * **Purpose:** Processes simulation logs to generate publication-ready plots. Empirically proves control effort invariance ($||f|| = \text{const}$) during zero-energy self-motion.
+    * **Purpose:** Processes simulation logs to generate plots used in the paper. Empirically proves control effort invariance ($||f|| = \text{const}$) during zero-energy self-motion.
 
 ---
 
@@ -90,7 +90,7 @@ The codebase is organized into three primary modules:
 
 5.  **Visualize & Simulate:** * Run the specific chassis animations (Cube/Octagon) in `src/viz/` to inspect the physical meaning of the singular values.
     * Run `src/viz/hexarotor_morphing_animation.m`. Let the hexarotor sweep its wake, then click **Stop & Save** to export the telemetry.
-    * Run `src/viz/plot_morphing_sim_logs.m` to read the telemetry and automatically generate the `Dynamic_Reconfiguration_Telemetry.pdf` figure used in the manuscript.
+    * Run `src/viz/plot_morphing_sim_logs.m` to read the telemetry and automatically generate the figure that you can see in the paper.
 
 ---
 
