@@ -33,7 +33,7 @@ https://github.com/user-attachments/assets/e7454744-661d-4990-973c-dd4341547ab8
 https://github.com/user-attachments/assets/bcadcfc7-6d8c-46cb-a12c-93f7b6b8b0b1
 
 #### 3. Hexarotor Dynamic Morphing & Wake Sweeping (N=6)
-*[Insert new video link here if you record the hexarotor_morphing_animation.m GUI in action]*
+https://github.com/user-attachments/assets/402d89e8-a757-4eaa-9ddc-5f2f3d042140
 
 ---
 
