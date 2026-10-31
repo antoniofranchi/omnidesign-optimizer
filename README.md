@@ -102,20 +102,23 @@ The codebase is organized into three primary modules:
 ---
 
 ## Citation
-If you use this software in your research, please cite the accompanying publication:
 
-> **Antonio Franchi**, "The N-5 Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-actuated Multirotors," *arXiv preprint arXiv:2512.23619*, 2025.  
-> DOI: [10.48550/arXiv.2512.23619](https://doi.org/10.48550/arXiv.2512.23619)
+If you use this software in your research, please cite the accompanying open-access publication:
+
+> **Antonio Franchi**, “The N−5 Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-Actuated Multirotors,” *The International Journal of Robotics Research*, OnlineFirst, 2026.  
+> First published online: October 24, 2026.  
+> DOI: [10.1177/02783649261495128](https://doi.org/10.1177/02783649261495128)
 
 **BibTeX:**
+
 ```bibtex
-@misc{franchi2025n5,
-  title        = {The {N-5} Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-actuated Multirotors},
-  author       = {Antonio Franchi},
-  year         = {2025},
-  eprint       = {2512.23619},
-  archivePrefix= {arXiv},
-  primaryClass = {cs.RO},
-  doi          = {10.48550/arXiv.2512.23619},
-  url          = {[https://arxiv.org/abs/2512.23619](https://arxiv.org/abs/2512.23619)}
+@article{franchi2026n5,
+  author  = {Antonio Franchi},
+  title   = {The {$N-5$} Scaling Law: Topological Dimensionality Reduction in the Optimal Design of Fully-Actuated Multirotors},
+  journal = {The International Journal of Robotics Research},
+  year    = {2026},
+  note    = {OnlineFirst},
+  doi     = {10.1177/02783649261495128},
+  url     = {https://doi.org/10.1177/02783649261495128}
 }
+```
